@@ -1,6 +1,7 @@
-.topic-container
+a(href=topic.url).topic-container
   .topic-card
     - if (topic.coverUrl)
+      .pic-hover
       .pic(style='background-image:url(' + topic.coverUrl + ')')
     //-
       - if (topic.user)
@@ -12,8 +13,7 @@
             - if(topic.user.party)
               p Bloque:&nbsp;
                 span=topic.user.party
-    a.title(href=topic.url)=topic.mediaTitle
+    .title=topic.mediaTitle
     p.participando
       strong=topic.participants.length
       |  ciudadanos participando
-  a.btn.btn-primary.btn-lg.topic-btn(href=topic.url) Ver este compromiso

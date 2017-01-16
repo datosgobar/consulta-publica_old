@@ -1,0 +1,71 @@
+.ext-footer
+  padding 60px 0
+  margin-top 30px
+  font-size 1em
+  background-color #fff
+
+  .footer
+    max-width 1180px
+    margin 0 auto
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    align-items flex-start
+    justify-content space-between
+
+  .institutional
+    flex-grow 2
+
+    p
+      max-width 560px
+  a
+    color #0072bc
+    font-weight 400
+    &:hover
+      color #0a9eff
+      text-decoration underline
+
+  .logo
+    span
+      display block
+      color #aaa
+      &:hover
+        opacity 1
+
+  .gob
+    padding-right 30px
+    margin-bottom 30px
+
+    img
+      max-width 100%
+      width 300px
+
+  .menu
+    padding 0 15px
+    text-align left
+
+    &:first-of-type
+      flex-grow 3
+
+    a
+      display block
+      padding 6px 0
+
+  @media only screen and (max-width: 687px)
+    .footer
+      flex-direction column
+      flex-wrap wrap
+      padding 0 10px
+
+    .menu
+      padding-right 0
+      a
+        display block
+        line-height 1em
+
+    .gob
+      img
+        width 300px
+
+    .institutional
+      padding 0 15px

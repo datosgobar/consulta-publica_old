@@ -1,0 +1,77 @@
+nav.navbar
+  height 72px
+  .navbar-brand
+    img
+      height 50px
+  .nav-item
+    height: 72px;
+    margin: -.5rem 0 0;
+    align-items: center;
+    display: flex
+    &.org-link
+      display: none
+    &:hover
+      background #0072bc
+      color #fff
+    .nav-link
+      font-weight 500
+      font-size 16px
+      padding: 0 7px
+  #toggleButton
+    top: 13px
+
+  .user-badge
+    button
+      margin 0
+      outline: none
+    &.active
+      background #0072bc!important
+      color #fff!important
+      button
+        background none!important
+        .caret
+          color #fff!important
+    &:hover
+      button
+        .caret
+          color #fff!important
+    .dropdown-list
+      background #0072bc!important
+      color #fff!important
+      border none!important
+      width: 232px;
+      position: absolute
+      top: 72px
+      right: 0
+      a
+        text-transform uppercase!important
+        &:hover
+          background #0091ef!important
+
+@media screen and (min-width: 700px)
+  nav.navbar
+      .nav-item
+        &.org-link
+          display: flex
+
+@media (max-width: 470px)
+  nav.navbar
+    height: 64px
+    .navbar-brand
+      img
+        height: 36px!important
+    .nav-item
+      height: 64px
+      .nav-link
+        font-size 12px
+    .dropdown-list
+      top: 64px!important
+    #toggleButton
+      top: 5px
+
+@media (max-width: 360px)
+  nav.navbar
+    .navbar-brand
+      margin-top: 6px
+      img
+        height: 28px!important

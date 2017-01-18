@@ -1,0 +1,101 @@
+nav.navbar
+  height 72px
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+  .navbar-brand
+    img
+      height 50px
+  .nav-item
+    height: 72px;
+    margin: -.5rem 0 0;
+    &.org-link
+      display: none
+    .nav-link
+      height: 100%
+      align-items: center;
+      display: flex
+      font-weight 500
+      font-size 17px
+      padding: 0 7px
+      &:hover, &:active
+        background #0695d6
+        color #fff
+        cursor: pointer
+  #toggleButton
+    border-radius: 4px
+    padding: 9px 10px
+    margin-left: -10px
+    margin-right: 3px
+    top: 13px
+    color: #888
+    &:active,&:hover
+      color: #fff
+      background-color: #0695d6
+
+
+  .user-badge
+    button
+      margin 0
+      outline: none
+    &.active
+      background #0072bc!important
+      color #fff!important
+      button
+        background none!important
+        .caret
+          color #fff!important
+    &:hover
+      button
+        .caret
+          color #fff!important
+    .dropdown-list
+      background #0072bc!important
+      color #fff!important
+      border none!important
+      width: 232px;
+      position: absolute
+      top: 72px
+      right: 0
+      a
+        text-transform uppercase!important
+        &:hover
+          background #0091ef!important
+
+@media screen and (min-width: 700px)
+  nav.navbar
+      .nav-item
+        &.org-link
+          display: flex
+
+@media (max-width: 500px)
+  nav.navbar
+    .nav-item
+      .nav-link
+        font-size 12px
+
+@media (max-width: 470px)
+  nav.navbar
+    height: 64px
+    .navbar-brand
+      img
+        height: 36px!important
+    .nav-item
+      height: 64px
+    .dropdown-list
+      top: 64px!important
+    #toggleButton
+      top: 5px
+
+@media (max-width: 470px)
+  nav.navbar
+    padding: .5rem 0
+
+@media (max-width: 360px)
+  nav.navbar
+    .navbar-brand
+      margin-top: 6px
+      img
+        height: 28px!important
+
+@media screen and (max-width: 940px)
+  #toggleButton
+    display block!important

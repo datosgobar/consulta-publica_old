@@ -1,0 +1,27 @@
+#sidebar
+  padding: 3em 0 0 0
+  background: none
+  max-width: 320px
+  &::before
+    content: 'Consultas'
+    color: #767676
+    font-weight: 500!important
+    font-size: 22px
+    padding-left: 20px
+  @media screen and (max-width: 940px)
+    left: 0
+    background: #f5f5f5!important
+    padding: 1em 0 0 0
+    position fixed
+    height 100vh
+    z-index 9
+    width 280px
+    transform unquote('translate3d(-100%, 0, 0)')
+    transition transform 300ms ease-in-out
+
+    &.active
+      transform unquote('translate3d(0, 0, 0)')
+
+
+@import './list/styles'
+@import './filter/styles'

@@ -151,7 +151,9 @@ export class SignIn extends Component {
               <h1>{t('header.signin')}</h1>
             </div>
         </div>
-        <MiArgentinaForm />
+        
+        {config.customSignin && <MiArgentinaForm />}
+
         {config.facebookSignin && <FacebookForm />}
         {form}
       </div>

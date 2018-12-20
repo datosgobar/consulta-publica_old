@@ -6,6 +6,7 @@ import config from 'lib/config'
 import FormAsync from 'lib/site/form-async'
 import userConnector from 'lib/site/connectors/user'
 import BtnMiargentina from './btn-miargentina'
+import BtnFacebook from 'lib/site/sign-in/btn-facebook'
 
 export class SignIn extends Component {
   constructor (props) {
@@ -151,6 +152,7 @@ export class SignIn extends Component {
             </div>
         </div>
         <MiArgentinaForm />
+        {config.facebookSignin && <FacebookForm />}
         {form}
       </div>
     )
@@ -165,6 +167,14 @@ function MiArgentinaForm () {
       <BtnMiargentina />
       <hr />
       <p className='muted'>{t('signin.or-login-with-email')}</p>
+    </div>
+  )
+}
+
+function FacebookForm () {
+  return (
+    <div className='facebook-auth-form'>
+      <BtnFacebook />
     </div>
   )
 }

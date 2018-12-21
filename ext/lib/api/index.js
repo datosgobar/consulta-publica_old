@@ -6,8 +6,9 @@ const log = debug('democracyos:ext:api')
 
 const app = module.exports = express()
 
-app.use('/ext/auth/miargentina', require('./miargentina'))
+const customSignin = process.env.CUSTOM_SIGNIN
 
+if (customSignin) app.use('/ext/auth/miargentina', require('./miargentina'))
 app.use('/ext/api/forum', require('./forum'))
 app.use('/ext/api/filter', require('./filter'))
 app.use('/ext/api/search', require('./search'))

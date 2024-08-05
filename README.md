@@ -1,3 +1,4 @@
+> **ATENCION!** Proyecto deprecado, continuacion en [datosgobar/consulta-publica](https://github.com/datosgobar/consulta-publica).
 ![Consulta Pública Argentina](/docs/consulta-publica-header.png?raw=true "Consulta Pública Argentina")
 
 # Consulta Pública
